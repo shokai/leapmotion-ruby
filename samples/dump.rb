@@ -19,7 +19,7 @@ leap.on :data do |data|
   puts "-"*5
 end
 
-leap.on :erro do |err|
+leap.on :error do |err|
   STDERR.puts err
 end
 
