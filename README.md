@@ -16,9 +16,11 @@ Requirements
 Usage
 -----
 
-### start `Leap Motion.app`
+### start "Leap Motion.app"
 
-It provides WebSocket API
+- `/Applications/Leap Motion.app`
+- It provides WebSocket API.
+
 <img src="http://shokai.org/archive/file/31d034b4fa72350a67a94f85a00b83a2.png">
 
 
