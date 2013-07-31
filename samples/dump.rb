@@ -1,3 +1,4 @@
+require 'rubygems'
 $:.unshift File.expand_path "../lib", File.dirname(__FILE__)
 require 'leapmotion'
 
@@ -13,8 +14,13 @@ leap.on :disconnect do
 end
 
 leap.on :data do |data|
-  puts "hands      #{data.hands.size}"
-  puts "pointables #{data.pointables.size}"
+  puts "hands        #{data.hands.size}"
+  if data.hands.size > 0
+    data.hands.each do |hand|
+      puts "sphereRadius #{hand.sphereRadius}"
+    end
+  end
+  puts "pointables   #{data.pointables.size}"
   puts data
   puts "-"*5
 end
