@@ -13,6 +13,7 @@ GEM
     event_emitter (0.2.5)
     hashie (2.0.5)
     json (1.8.0)
+    json (1.8.0-java)
     rake (10.1.0)
     websocket (1.1.1)
     websocket-client-simple (0.0.5)
@@ -20,6 +21,7 @@ GEM
       websocket
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
