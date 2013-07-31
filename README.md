@@ -1,27 +1,56 @@
-# Leapmotion
+LeapMotion
+==========
+LeapMotion WebSocket wrapper for Ruby
 
-TODO: Write a gem description
 
-## Installation
+Install
+-------
 
-Add this line to your application's Gemfile:
+     % gem install leapmotion
 
-    gem 'leapmotion'
+Requirements
+------------
 
-And then execute:
+- Ruby1.8.7+
+- [Leap Motion.app](https://www.leapmotion.com/setup)
 
-    $ bundle
+Usage
+-----
 
-Or install it yourself as:
+start `Leap Motion.app`
 
-    $ gem install leapmotion
+```ruby
+require 'rubygems'
+require 'leapmotion'
 
-## Usage
+leap = LeapMotion.connect
 
-TODO: Write usage instructions here
+leap.on :connect do
+  puts "connect"
+end
 
-## Contributing
+leap.on :disconnect do
+  puts "disconnect"
+  exit
+end
 
+leap.on :data do |data|
+  puts "hands      #{data.hands.size}"
+  puts "pointables #{data.pointables.size}"
+  puts data
+  puts "-"*5
+end
+
+leap.on :error do |err|
+  STDERR.puts err
+end
+
+leap.wait
+```
+
+
+Contributing
+------------
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
