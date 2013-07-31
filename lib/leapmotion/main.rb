@@ -1,6 +1,7 @@
 module LeapMotion
-  def self.connect
-    LeapMotion::Device.new 
+  def self.connect(ws_url=nil)
+    ws_url = "http://localhost:6437" unless ws_url
+    LeapMotion::Device.new ws_url
   end
 
   class Data < Hashie::Mash
@@ -10,7 +11,7 @@ module LeapMotion
     include EventEmitter
     attr_accessor :version
 
-    def initialize(ws_url="http://localhost:6437")
+    def initialize(ws_url)
       @ws = WebSocket::Client::Simple.connect ws_url
       @version = nil
       this = self

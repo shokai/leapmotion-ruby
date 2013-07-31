@@ -1,7 +1,7 @@
 $:.unshift File.expand_path "../lib", File.dirname(__FILE__)
 require 'leapmotion'
 
-leap = LeapMotion.connect
+leap = LeapMotion.connect ARGV.shift
 
 leap.on :connect do
   puts "connect"
@@ -13,9 +13,9 @@ leap.on :disconnect do
 end
 
 leap.on :data do |data|
-  puts data
   puts "hands      #{data.hands.size}"
   puts "pointables #{data.pointables.size}"
+  puts data
   puts "-"*5
 end
 
