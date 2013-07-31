@@ -7,11 +7,18 @@ Install
 
      % gem install leapmotion
 
+
 Requirements
 ------------
 
 - Ruby1.8.7+
 - [Leap Motion.app](https://www.leapmotion.com/setup)
+
+
+Samples
+-------
+- https://github.com/shokai/ruby-leapmotion/tree/master/samples
+
 
 Usage
 -----
