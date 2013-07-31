@@ -1,3 +1,7 @@
+=== 0.0.2 2013-08-01
+
+* LeapMotion.connect :gestures => true
+
 === 0.0.1 2013-08-01
 
 * connect and get raw data
