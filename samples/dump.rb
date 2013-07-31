@@ -2,7 +2,7 @@ require 'rubygems'
 $:.unshift File.expand_path "../lib", File.dirname(__FILE__)
 require 'leapmotion'
 
-leap = LeapMotion.connect ARGV.shift
+leap = LeapMotion.connect
 
 leap.on :connect do
   puts "connect"

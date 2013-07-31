@@ -23,7 +23,7 @@ Samples
 Usage
 -----
 
-### start "Leap Motion.app"
+### Start "Leap Motion.app"
 
 - `/Applications/Leap Motion.app`
 - It provides WebSocket API.
@@ -31,7 +31,7 @@ Usage
 <img src="http://shokai.org/archive/file/31d034b4fa72350a67a94f85a00b83a2.png">
 
 
-### run ruby
+### Run Ruby
 
 ```ruby
 require 'rubygems'
@@ -62,6 +62,21 @@ end
 leap.wait
 ```
 
+### Gestures
+
+```ruby
+leap = LeapMotion.connect :gestures => true
+
+leap.on :gestures do |gestures|
+  gestures.each do |g|
+    puts g.type
+    puts g
+  end
+  puts "-"*5
+end
+
+leap.wait
+```
 
 Contributing
 ------------
