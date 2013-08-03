@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    leapmotion (0.0.3)
+    leapmotion (0.0.4)
       event_emitter
       hashie
       json
