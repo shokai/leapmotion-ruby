@@ -1,3 +1,5 @@
+require File.expand_path "test_helper", File.dirname(__FILE__)
+
 class TestLeapMotion < MiniTest::Test
 
   def setup
@@ -6,6 +8,7 @@ class TestLeapMotion < MiniTest::Test
 
   def teardown
     @leap.close
+    sleep 1
   end
 
   def test_version
