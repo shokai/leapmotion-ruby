@@ -81,6 +81,15 @@ end
 leap.wait
 ```
 
+
+Test
+----
+
+    % gem install bundler
+    % bundle install
+    % bundle exec rake test
+
+
 Contributing
 ------------
 1. Fork it
