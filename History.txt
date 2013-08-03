@@ -1,3 +1,7 @@
+=== 0.0.3 2013-08-03
+
+* change github URL
+
 === 0.0.2 2013-08-01
 
 * LeapMotion.connect :gestures => true
