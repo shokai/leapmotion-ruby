@@ -44,6 +44,10 @@ module LeapMotion
       end
     end
 
+    def close
+      @ws.close
+    end
+
     def wait
       loop do
         sleep 1
