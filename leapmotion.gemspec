@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hashimoto@shokai.org"]
   spec.description   = %q{LeapMotion WebSocket wrapper for Ruby}
   spec.summary       = spec.description
-  spec.homepage      = "https://github.com/shokai/ruby-leapmotion"
+  spec.homepage      = "https://github.com/shokai/leapmotion-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

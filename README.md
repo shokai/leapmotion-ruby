@@ -2,6 +2,9 @@ LeapMotion
 ==========
 LeapMotion WebSocket wrapper for Ruby
 
+- https://github.com/shokai/leapmotion-ruby
+- http://rubygems.org/gems/leapmotion
+
 Install
 -------
 
@@ -17,7 +20,7 @@ Requirements
 
 Samples
 -------
-- https://github.com/shokai/ruby-leapmotion/tree/master/samples
+- https://github.com/shokai/leapmotion-ruby/tree/master/samples
 
 
 Usage
